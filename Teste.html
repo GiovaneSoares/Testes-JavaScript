@@ -17,18 +17,16 @@
 </head>
 <body>
     <h1>Bem vindo! </h1>
-
     <script>
         var nome = window.prompt('Qual é o seu nome? ')
         var salario = window.prompt("Qual o seu salario mensal? ")
-        // var primeiro_numero = Number(window.prompt("Digite o primeiro numero:"))
-        // var Segundo_numero = Number(window.prompt("Digite o segundo numero:"))
-        // var soma = primeiro_numero + Segundo_numero
-        // window.alert(`${nome}, o resultado da soma entre ${primeiro_numero} e ${Segundo_numero} é: ${soma}`)
+        var primeiro_numero = Number(window.prompt("Digite o primeiro numero:"))
+        var Segundo_numero = Number(window.prompt("Digite o segundo numero:"))
+        var soma = primeiro_numero + Segundo_numero
+        window.alert(`${nome}, o resultado da soma entre ${primeiro_numero} e ${Segundo_numero} é: ${soma}`)
         document.write(`<strong>${nome}</strong> o seu nome tem ${nome.length} letras. <br/>`)
         document.write(`Em letras maisculas: ${nome.toLocaleUpperCase()}. <br/>`)
         document.write(`Em letras minusculas: ${nome.toLocaleLowerCase()}.<br/>`)
-        // document.write(`O seu salario mensal: ${salario.toString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
         document.write(`O seu salario mensal: R$${salario}`)
     </script>
 </body>
